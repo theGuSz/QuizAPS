@@ -21,18 +21,18 @@ public class Quiz implements ActionListener{
 		
 	//escrevendo as perguntas
 		String[] perguntas = {
-			"Em meio a grande metrópole, existem lixos especiais de coleta seletiva. Quais são eles? ",
-			"O que é a coleta seletiva usada nas cidades?",
-			"Na coleta seletiva nas cidades, são usadas cores para distinguir onde jogar o lixo, qual é a do plástico?",
-			"Como separar corretamente os lixos recicláveis em casas, parques e ruas?",
-			"Na coleta seletiva nas cidades, são usadas cores para distinguir onde jogar o lixo, qual é o de papel?",
-			"O que é educação ambiental?",
-			"Para que serve a educação ambiental?",
-			"Uma das formas de colaborar com a preservação do meio ambiente é reduzir a produção de resíduos. Mas como?",
-			"Qual alternativa apresenta uma vantagem da energia solar?",
-			"Qual dos gases abaixo não é conhecido como um dos gases do efeito estufa (GEE)?"
-			
-			};
+				"Em meio a grande metrópole, existem lixos especiais de coleta seletiva. Quais são eles? ",
+				"O que é a coleta seletiva usada nas cidades?",
+				"Na coleta seletiva nas cidades, são usadas cores para distinguir onde jogar o lixo, qual é a do plástico?",
+				"Como separar corretamente os lixos recicláveis em casas, parques e ruas?",
+				"Na coleta seletiva nas cidades, são usadas cores para distinguir onde jogar o lixo, qual é o de papel?",
+				"O que é educação ambiental?",
+				"Para que serve a educaçãoo ambiental?",
+				"Uma das formas de colaborar com a preservação do meio ambiente é reduzir a produção de resíduos. Mas como?",
+				"Qual alternativa apresenta uma vantagem da energia solar?",
+				"Qual dos gases abaixo não é conhecido como um dos gases do efeito estufa (GEE)?"
+				
+				};
 		
 		//alternativas de resposta
 		String[][] alternativa = {
@@ -109,14 +109,14 @@ public class Quiz implements ActionListener{
 	    
 	    
 		
-		//but�o de resposta
+		//butï¿½o de resposta
 		JButton bA = new JButton();
 		JButton bB = new JButton();
 		JButton bC = new JButton();
 		JButton bD = new JButton();
 		
 		
-		//botao para pular quest�o
+		//botao para pular questão
 		JButton bProx = new JButton();
 
 		
@@ -126,7 +126,7 @@ public class Quiz implements ActionListener{
 		
 		
 		public Quiz() {
-			tela.setSize(1080, 720);///resolu��o
+			tela.setSize(1080, 720);///resolução
 			tela.setResizable(false);
 			tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			tela.setLayout(null);
@@ -154,7 +154,7 @@ public class Quiz implements ActionListener{
 			areatext.setEditable(false);
 			
 			
-			//responsavel por mostrar a pontua��o a o final do jogo
+			//responsavel por mostrar a pontuação a o final do jogo
 			numerpontos.setBounds(225,225,200,100);
 			numerpontos.setFont(new Font("Arial", Font.BOLD, 28));
 			numerpontos.setForeground(new Color(128,128,0));
@@ -188,7 +188,7 @@ public class Quiz implements ActionListener{
 
 			
 			
-			//configurar but�es
+			//configurar botões
 			bA.setBounds(0, 100, 100, 50);
 			bA.setFont(new Font("Arial", Font.BOLD, 28));
 			bA.setFocusable(false);
@@ -244,7 +244,7 @@ public class Quiz implements ActionListener{
 			
 			proximaQuestao();
 		}
-		//mudar de quest�o
+		//mudar de questão
 		public void proximaQuestao() {
 			
 			if(indice>=perguntas_total) {
@@ -273,14 +273,14 @@ public class Quiz implements ActionListener{
 			bD.setEnabled(false);
 			bProx.setEnabled(false);
 			
-			//sele��o de alternativa
-			if(e.getSource()==bA) {//se bot�o X for selecionado resposta recebe a char referente
+			//seleção de alternativa
+			if(e.getSource()==bA) {//se botão X for selecionado resposta recebe a char referente
 				resposta= 'A';
 				if(resposta == respostas[indice]) {
-					pontos = pontos+10;//a cada acerto s�o adicionados 10 pontos
+					pontos = pontos+10;//a cada acerto são adicionados 10 pontos
 				}
 				else {
-					pontos = pontos-5;//a cada erro s�o subtraidos 5 pontos
+					pontos = pontos-5;//a cada erro são subtraidos 5 pontos
 				}
 			}
 			if(e.getSource()==bB) {
@@ -310,7 +310,7 @@ public class Quiz implements ActionListener{
 					pontos = pontos-5;
 				}
 			}
-			if(e.getSource()==bProx) {//pular quet�o (n�o perde nem ganha pontos)
+			if(e.getSource()==bProx) {//pular questão (não perde nem ganha pontos)
 				prox--;
 				proximaQuestao();
 				}
@@ -363,7 +363,7 @@ public class Quiz implements ActionListener{
 					bC.setEnabled(true);
 					bD.setEnabled(true);
 					
-					//verificar se ainda h� proximos utilizaveis
+					//verificar se ainda há proximos utilizaveis
 					if (prox > 0) {
 						bProx.setEnabled(true);
 					}
@@ -404,7 +404,7 @@ public class Quiz implements ActionListener{
 			
 			//conteudo para estudos
 			if(pontos < 50) {
-			int resposta = JOptionPane.showConfirmDialog(tela,"Acho que lhe falta conhecimento! Gostaria de ter acesso a um material de estudo?", "n�o", JOptionPane.YES_NO_OPTION);
+			int resposta = JOptionPane.showConfirmDialog(tela,"Acho que lhe falta conhecimento! Gostaria de ter acesso a um material de estudo?", "nï¿½o", JOptionPane.YES_NO_OPTION);
 				if (resposta == JOptionPane.YES_OPTION) {
 					try{
 				        URI link = new URI("https://periodicos.ufsm.br/reget/article/viewFile/4259/3035");
