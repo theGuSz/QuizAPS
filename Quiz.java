@@ -27,7 +27,7 @@ public class Quiz implements ActionListener{
 			"Como separar corretamente os lixos recicláveis em casas, parques e ruas?",
 			"Na coleta seletiva nas cidades, são usadas cores para distinguir onde jogar o lixo, qual é o de papel?",
 			"O que é educação ambiental?",
-			"Para que serve a educaçãoo ambiental?",
+			"Para que serve a educação ambiental?",
 			"Uma das formas de colaborar com a preservação do meio ambiente é reduzir a produção de resíduos. Mas como?",
 			"Qual alternativa apresenta uma vantagem da energia solar?",
 			"Qual dos gases abaixo não é conhecido como um dos gases do efeito estufa (GEE)?"
