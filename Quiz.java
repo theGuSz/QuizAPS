@@ -21,31 +21,31 @@ public class Quiz implements ActionListener{
 		
 	//escrevendo as perguntas
 		String[] perguntas = {
-			"Em meio a grande metrópole, existe lixos especiais de coleta seletiva. Quais são elas ? ",
-			"O que é coleta seletiva que são usadas nas cidades?",
-			"Na coleta seletiva nas cidades, são usadas cores para distinguir onde jogar o lixo, qual é o de plástico ?",
-			"Como separar corretamente lixo reciclável em casa, parque, rua?",
-			"Na coleta seletiva nas cidades, são usadas cores para distinguir onde jogar o lixo, qual é o de papel ?",
-			"O que é educação ambiental ?",
-			"Para que serve a educação ambiental ?",
-			"Uma das formas de colaborar com a preservação do meio ambiente é reduzir a produção de resíduos. Mas como?",
+			"Em meio a grande metrÃ³pole, existem lixos especiais de coleta seletiva. Quais sÃ£o eles ? ",
+			"O que Ã© a coleta seletiva usada nas cidades?",
+			"Na coleta seletiva nas cidades, sÃ£o usadas cores para distinguir onde jogar o lixo, qual Ã© a do plÃ¡stico ?",
+			"Como separar corretamente os lixos reciclÃ¡veis em casa, parques, rua?",
+			"Na coleta seletiva nas cidades, sÃ£o usadas cores para distinguir onde jogar o lixo, qual Ã© o de papel ?",
+			"O que Ã© educaÃ§Ã£o ambiental ?",
+			"Para que serve a educaÃ§Ã£o ambiental ?",
+			"Uma das formas de colaborar com a preservaÃ§Ã£o do meio ambiente Ã© reduzir a produÃ§Ã£o de resÃ­duos. Mas como?",
 			"Qual alternativa apresenta uma vantagem da energia solar?",
-			"Qual dos gases abaixo não é conhecido como um dos gases do efeito estufa (GEE)?"
+			"Qual dos gases abaixo nÃ£o Ã© conhecido como um dos gases do efeito estufa (GEE)?"
 			
 			};
 		
 		//alternativas de resposta
 		String[][] alternativa = {
-				{"Orgânico, papel, metal, vidro e plástico.","Papel, papelão, metal e entulho","Plástico, madeira, vidro e orgânico.","Todas as anteriores."},
-				{"Nome qualquer para recolhimento de lixo.","Significa nada.","Jogar lixo em qualquer lugar "," É o nome para recolhimento dos materiais que são possíveis de serem reciclados."},
+				{"OrgÃ¢nico, papel, metal, vidro e plÃ¡stico.","Papel, papelÃ£o, metal e entulho","PlÃ¡stico, madeira, vidro e orgÃ¢nico.","Todas as anteriores."},
+				{"Nome qualquer para recolhimento de lixo.","Significa nada.","Jogar lixo em qualquer lugar "," Ã‰ o nome para recolhimento dos materiais que sÃ£o possÃ­veis de serem reciclados."},
 			{"Azul","Vermelha","Amarelo","Verde"},
-			{"Colocar todos no mesmo saco plástico.","Separar o lixo orgânico dos resíduos sólidos","Joga na em qualquer lugar onde estiver.","Descarta tudo em um ponto de coleta"},
+			{"Colocar todos no mesmo saco plÃ¡stico.","Separar o lixo orgÃ¢nico dos resÃ­duos sÃ³lidos","Joga na em qualquer lugar onde estiver.","Descarta tudo em um ponto de coleta"},
 			{"Azul","Vermelha","Amarelo","Verde"},
-			{"Processo responsável por formar indivíduos preocupados com os problemas ambientais","Nome dado para quem joga lixo na rua.","Ciclo de reciclagem ","Nenhuma das anteriores."},
-		{"Serve para a conscientização sobre os problemas ambientais e como ajudar a combatê-los.","Serve para nada","Nome dado a algum produto","Nenhuma das anteriores"},
-		{"Optando pela compra de produtos com embalagens recicláveis.","Reutilizando os materiais e objetos sempre que possível.","Apoiando iniciativas de reciclagem.","Todas as anteriores."},
-		{"Não polui","Não é renovável","É eficaz em qualquer clima","É disponível a todo momento"},
-		{"N2O – óxido nitroso","O2 – oxigênio","CO2 – dióxido de carbono ou gás carbônico","CH4 – metano"}
+			{"Processo responsÃ¡vel por formar indivÃ­duos preocupados com os problemas ambientais","Nome dado para quem joga lixo na rua.","Ciclo de reciclagem ","Nenhuma das anteriores."},
+		{"Serve para a conscientizaÃ§Ã£o sobre os problemas ambientais e como ajudar a combatÃª-los.","Serve para nada","Nome dado a algum produto","Nenhuma das anteriores"},
+		{"Optando pela compra de produtos com embalagens reciclÃ¡veis.","Reutilizando os materiais e objetos sempre que possÃ­vel.","Apoiando iniciativas de reciclagem.","Todas as anteriores."},
+		{"NÃ£o polui","NÃ£o Ã© renovÃ¡vel","Ã‰ eficaz em qualquer clima","Ã‰ disponÃ­vel a todo momento"},
+		{"N2O â€“ Ã³xido nitroso","O2 â€“ oxigÃªnio","CO2 â€“ diÃ³xido de carbono ou gÃ¡s carbÃ´nico","CH4 â€“ metano"}
 		};
 		
 		//alternativas corretas
@@ -109,14 +109,14 @@ public class Quiz implements ActionListener{
 	    
 	    
 		
-		//butão de resposta
+		//butÃ£o de resposta
 		JButton bA = new JButton();
 		JButton bB = new JButton();
 		JButton bC = new JButton();
 		JButton bD = new JButton();
 		
 		
-		//botao para pular questão
+		//botao para pular questÃ£o
 		JButton bProx = new JButton();
 
 		
@@ -126,7 +126,7 @@ public class Quiz implements ActionListener{
 		
 		
 		public Quiz() {
-			tela.setSize(1080, 720);///resolução
+			tela.setSize(1080, 720);///resoluÃ§Ã£o
 			tela.setResizable(false);
 			tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			tela.setLayout(null);
@@ -154,7 +154,7 @@ public class Quiz implements ActionListener{
 			areatext.setEditable(false);
 			
 			
-			//responsavel por mostrar a pontuação a o final do jogo
+			//responsavel por mostrar a pontuaÃ§Ã£o a o final do jogo
 			numerpontos.setBounds(225,225,200,100);
 			numerpontos.setFont(new Font("Arial", Font.BOLD, 28));
 			numerpontos.setForeground(new Color(128,128,0));
@@ -188,7 +188,7 @@ public class Quiz implements ActionListener{
 
 			
 			
-			//configurar butões
+			//configurar butÃµes
 			bA.setBounds(0, 100, 100, 50);
 			bA.setFont(new Font("Arial", Font.BOLD, 28));
 			bA.setFocusable(false);
@@ -244,7 +244,7 @@ public class Quiz implements ActionListener{
 			
 			proximaQuestao();
 		}
-		//mudar de questão
+		//mudar de questÃ£o
 		public void proximaQuestao() {
 			
 			if(indice>=perguntas_total) {
@@ -273,14 +273,14 @@ public class Quiz implements ActionListener{
 			bD.setEnabled(false);
 			bProx.setEnabled(false);
 			
-			//seleção de alternativa
-			if(e.getSource()==bA) {//se botão X for selecionado resposta recebe a char referente
+			//seleÃ§Ã£o de alternativa
+			if(e.getSource()==bA) {//se botÃ£o X for selecionado resposta recebe a char referente
 				resposta= 'A';
 				if(resposta == respostas[indice]) {
-					pontos = pontos+10;//a cada acerto são adicionados 10 pontos
+					pontos = pontos+10;//a cada acerto sÃ£o adicionados 10 pontos
 				}
 				else {
-					pontos = pontos-5;//a cada erro são subtraidos 5 pontos
+					pontos = pontos-5;//a cada erro sÃ£o subtraidos 5 pontos
 				}
 			}
 			if(e.getSource()==bB) {
@@ -310,7 +310,7 @@ public class Quiz implements ActionListener{
 					pontos = pontos-5;
 				}
 			}
-			if(e.getSource()==bProx) {//pular quetão (não perde nem ganha pontos)
+			if(e.getSource()==bProx) {//pular quetÃ£o (nÃ£o perde nem ganha pontos)
 				prox--;
 				proximaQuestao();
 				}
@@ -363,7 +363,7 @@ public class Quiz implements ActionListener{
 					bC.setEnabled(true);
 					bD.setEnabled(true);
 					
-					//verificar se ainda há proximos utilizaveis
+					//verificar se ainda hÃ¡ proximos utilizaveis
 					if (prox > 0) {
 						bProx.setEnabled(true);
 					}
@@ -404,7 +404,7 @@ public class Quiz implements ActionListener{
 			
 			//conteudo para estudos
 			if(pontos < 50) {
-			int resposta = JOptionPane.showConfirmDialog(tela,"lhe falta conhecimeto!!!  Gostaria de ter acesso a um material de estudo", "não", JOptionPane.YES_NO_OPTION);
+			int resposta = JOptionPane.showConfirmDialog(tela,"lhe falta conhecimeto!!!  Gostaria de ter acesso a um material de estudo", "nÃ£o", JOptionPane.YES_NO_OPTION);
 				if (resposta == JOptionPane.YES_OPTION) {
 					try{
 				        URI link = new URI("https://periodicos.ufsm.br/reget/article/viewFile/4259/3035");
